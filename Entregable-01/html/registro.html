@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="cantainer__form">
+            <div class="container__form_button">
+                    <div class="elegir" id="elegir"></div>
+                    <button type="button" class="precionar-button" onclick="login()">Iniciar Sesión</button>
+                    <button type="button" class="precionar-button" onclick="registrar()">Registrarse</button>
+            </div>
+            <div class="redes_sociales">
+                <a href="https://www.facebook.com/home.php"><img src="../img/facebook-logo-0.png" alt="icono-facebook"></a>
+                <img src="../img/gmail_icon-icons.com_62758.png" alt="icono-gmail">
+                <img src="../img/twitter.png" alt="icono-twitter">
+            </div>
+            <form id="login" class="input__group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required >
+                <input type="password" class="input-field" placeholder="Contraseña" required >
+                <input type="checkbox" class="check-box"><span>Recordar Contraseña</span>
+                <button type="submit" class="submit_box">Acceder</button>
+            </form>
+            <form id="registrar" class="input__group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required id="registro-usuario">
+                <input type="email" class="input-field" placeholder="Correo" required id="registro-email">
+                <input type="password" class="input-field" placeholder="Contraseña" required id="registro-contraseña">
+                <input type="checkbox" class="check-box"><span>Acepto los Términos y Condiciones</span>
+                <button type="submit" class="submit_box">Registrarse</button>
+            </form>
+            <p class="warning" id="warnings"></p>
+        </div>
+    </div>
+    <script src="../js/estilo.js"></script>
+    <script src="../js/validar.js"></script>
+</body>
+</html>
